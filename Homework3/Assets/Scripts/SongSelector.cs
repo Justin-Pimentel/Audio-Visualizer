@@ -35,6 +35,7 @@ public class SongSelector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3) && audioS.clip != ac3)
         {
             audioS.clip = ac3;
+            audioS.time = 22f;
             audioS.Play();
         }
     }
