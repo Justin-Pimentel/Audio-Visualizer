@@ -23,12 +23,14 @@ public class SongSelector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && audioS.clip != ac1)
         {
             audioS.clip = ac1;
+            audioS.time = 0f;
             audioS.Play();
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha2) && audioS.clip != ac2)
         {
             audioS.clip = ac2;
+            audioS.time = 0f;
             audioS.Play();
         }
 
